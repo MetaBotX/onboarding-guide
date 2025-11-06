@@ -1,0 +1,72 @@
+site_name: MetaBotX Engineering Onboarding Guide
+site_description: Comprehensive onboarding guide for MetaBotX engineers
+site_url: https://metabotx.github.io/onboarding-guide
+repo_url: https://github.com/metabotx/onboarding-guide
+repo_name: metabotx/onboarding-guide
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Onboarding:
+    - onboarding/getting-started.md
+    - onboarding/project-setup.md
+    - onboarding/development-workflow.md
+  - Git Workflow:
+    - git-workflow/gitflow-strategy.md
+    - git-workflow/pull-requests.md
+    - git-workflow/branch-management.md
+    - git-workflow/commit-messages.md
+    - git-workflow/merge-strategies.md
+  - Engineering Practices:
+    - engineering-practices/code-review.md
+    - engineering-practices/best-practices.md
+    - engineering-practices/tools.md
+  - Examples:
+    - examples/example-pr-description.md
+    - examples/example-branch-names.md
+    - examples/example-commit-messages.md
+    - examples/example-code-review-feedback.md
+    - examples/example-git-workflow.md
+
+copyright: Copyright &copy; 2025 MetaBotX
+
